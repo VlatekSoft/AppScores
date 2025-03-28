@@ -346,3 +346,214 @@ body {
         flex-wrap: wrap;
     }
 }
+
+/* Адаптивность для мобильных устройств с высоким разрешением (например, 2460x1080) */
+@media screen and (min-width: 360px) and (max-width: 2560px) {
+    /* Оптимизация блока с общими суммами - в одну строку */
+    .summary-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .summary-item {
+        padding: 8px;
+    }
+    
+    .summary-label {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+    
+    .summary-value {
+        font-size: 1.2rem;
+    }
+    
+    /* Оптимизация формы добавления игрока - в одну строку */
+    .add-player-form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    
+    .input-field {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Оптимизация элементов игрока - более компактно */
+    .player-item {
+        padding: 8px 10px;
+    }
+    
+    .player-info {
+        margin-right: 8px;
+    }
+    
+    .player-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 4px;
+        justify-content: flex-end;
+        max-width: 100%;
+    }
+    
+    .btn-small {
+        padding: 4px 6px;
+        font-size: 0.8rem;
+    }
+    
+    .input-amount {
+        width: 60px;
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+    
+    /* Делаем кнопки + и - меньше */
+    .btn-plus, .btn-minus {
+        width: 26px;
+        height: 26px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Адаптивность для мобильных устройств с высоким разрешением (например, 2460x1080) */
+@media (min-width: 769px) and (max-width: 2560px) {
+    /* Оптимизация блока с общими суммами - в одну строку */
+    .summary-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .summary-item {
+        padding: 8px;
+    }
+    
+    .summary-label {
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+    }
+    
+    .summary-value {
+        font-size: 1.3rem;
+    }
+    
+    /* Оптимизация формы добавления игрока - в одну строку */
+    .add-player-form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    
+    .input-field {
+        padding: 8px 12px;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+    }
+    
+    /* Оптимизация элементов игрока - более компактно */
+    .player-item {
+        padding: 8px 12px;
+    }
+    
+    .player-info {
+        margin-right: 10px;
+    }
+    
+    .player-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 4px;
+        justify-content: flex-end;
+    }
+    
+    .btn-small {
+        padding: 5px 7px;
+        font-size: 0.8rem;
+    }
+    
+    .input-amount {
+        width: 65px;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+    
+    /* Делаем кнопки + и - меньше */
+    .btn-plus, .btn-minus {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Адаптивность для экранов с высоким разрешением (например, 2460x1080) */
+@media (min-width: 769px) and (max-width: 2560px) {
+    /* Оптимизация блока с суммами - в одну строку */
+    .summary-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    
+    .summary-item {
+        padding: 10px;
+    }
+    
+    .summary-label {
+        font-size: 1rem;
+    }
+    
+    .summary-value {
+        font-size: 1.5rem;
+    }
+    
+    /* Оптимизация формы добавления игрока - в одну строку */
+    .add-player-form {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    /* Оптимизация элементов игрока - более компактно */
+    .player-item {
+        padding: 10px 15px;
+    }
+    
+    .player-controls {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .btn-small {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .input-amount {
+        width: 70px;
+        padding: 6px;
+    }
+    
+    /* Делаем кнопки + и - меньше */
+    .btn-plus, .btn-minus {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+}
