@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppScores - Учет финансов игроков</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Блок с общими суммами -->
+        <div class="summary-container">
+            <div class="summary-item">
+                <div class="summary-label">Вводы</div>
+                <div class="summary-value" id="total-inputs">0</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Выводы</div>
+                <div class="summary-value" id="total-outputs">0</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Сальдо</div>
+                <div class="summary-value" id="total-balance">0</div>
+            </div>
+        </div>
+        
+        <!-- Форма добавления игрока -->
+        <div class="add-player-form">
+            <input type="text" id="player-name" placeholder="Имя игрока" class="input-field">
+            <button id="create-player" class="btn btn-primary" disabled>Создать</button>
+        </div>
+        
+        <!-- Список игроков -->
+        <div class="players-container">
+            <div class="players-header">
+                <div class="player-header-name">Игроки</div>
+                <div class="player-header-balance">Сальдо</div>
+            </div>
+            <ul id="players-list" class="players-list"></ul>
+        </div>
+        
+        <!-- Кнопки управления -->
+        <div class="control-buttons">
+            <button id="delete-all" class="btn btn-danger">Удалить все</button>
+            <button id="clear-sums" class="btn btn-warning">Очистить суммы</button>
+            <button id="undo" class="btn btn-secondary"><span class="undo-icon">↩</span></button>
+        </div>
+    </div>
+    
+    <!-- Шаблон для элемента игрока -->
+    <template id="player-template">
+        <li class="player-item" data-player-id="">
+            <div class="player-info">
+                <div class="player-name"></div>
+                <div class="player-balance"></div>
+            </div>
+            <div class="player-controls">
+                <button class="btn btn-small btn-plus">+</button>
+                <button class="btn btn-small btn-minus">-</button>
+                <input type="number" class="input-amount" value="1000" min="1000" max="99999">
+                <button class="btn btn-small btn-input">Ввод</button>
+                <button class="btn btn-small btn-output">Вывод</button>
+                <button class="btn btn-small btn-delete"><span class="trash-icon">🗑️</span></button>
+            </div>
+            <div class="player-history hidden">
+                <h4>История операций</h4>
+                <ul class="history-list"></ul>
+            </div>
+        </li>
+    </template>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
