@@ -87,13 +87,7 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
-.players-header {
-    display: flex;
-    background-color: #4a90e2;
-    color: white;
-    padding: 12px 20px;
-    font-weight: bold;
-}
+/* Удален синий блок с заголовком "Игроки Сальдо" */
 
 .player-header-name {
     flex: 1;
@@ -297,11 +291,10 @@ body {
 }
 
 .trash-icon {
-    font-size: 1.2rem;
-}
-
-.undo-icon {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    height: 36px;
+    display: flex;
+    align-items: center;
 }
 
 /* Утилиты */
